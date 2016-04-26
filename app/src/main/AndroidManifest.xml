@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="th.ac.up.ict.student.productapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SupplierActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".SupplierEditActivity" />
+        <activity android:name=".SupplierAddActivity" />
+        <activity android:name=".ProductAddActivity" />
+        <activity android:name=".ProductEditActivity" />
+        <activity android:name=".ProductValueActivity" />
+        <activity android:name=".ProductAddValueActivity"></activity>
+    </application>
+
+</manifest>
